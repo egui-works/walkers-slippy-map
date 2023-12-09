@@ -1,0 +1,37 @@
+<!DOCTYPE html><html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+
+
+    <title>Walkers</title>
+
+    <style>
+        /* Allow canvas to fill entire web page: */
+        html,
+        body {
+            overflow: hidden;
+            margin: 0 !important;
+            padding: 0 !important;
+            height: 100%;
+            width: 100%;
+        }
+
+        /* Position canvas in center-top: */
+        canvas {
+            margin-right: auto;
+            margin-left: auto;
+            display: block;
+            position: absolute;
+            top: 0%;
+            left: 50%;
+            transform: translate(-50%, 0%);
+        }
+    </style>
+
+<link rel="preload" href="/walkers/demo_web-7fcdea35875f88b6_bg.wasm" as="fetch" type="application/wasm" crossorigin="">
+<link rel="modulepreload" href="/walkers/demo_web-7fcdea35875f88b6.js"></head>
+
+<body>
+    <canvas id="the_canvas_id"></canvas>
+
+
+<script type="module">import init from '/walkers/demo_web-7fcdea35875f88b6.js';init('/walkers/demo_web-7fcdea35875f88b6_bg.wasm');</script></body></html>
